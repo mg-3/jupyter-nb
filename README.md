@@ -6,3 +6,8 @@
 ```docker build -t unm/jupyter-nb:v1 .```
 1. Run the container
 ```docker run --name jupyter -d -p 8888:8888 unm/jupyter-nb:v1```
+1. Read the Jupyter server logs by doing
+```docker logs --tail=all jupyter```. The output will have a URL like so
+```Copy/paste this URL into your browser when you connect for the first time,
+    to login with a token:
+        http://bbc25d1f331f:8888/?token=2ad39d07c47f3d98a65d866456b741f8ff569cce9a288541&token=2ad39d07c47f3d98a65d866456b741f8ff569cce9a288541```.  Replace the host with our server chiltepin.health.unm.edu
